@@ -11,4 +11,5 @@ class GetdataItem(Item):
     balsas = Field()
     seimunas = Field()
     url_id = Field()
+    pavarde = Field()
     pass
