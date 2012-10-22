@@ -9,7 +9,7 @@ class GetdataItem(Item):
     # define the fields for your item here like:
     partija = Field()
     balsas = Field()
-    seimunas = Field()
+#    seimunas = Field()
     url_id = Field()
     pavarde = Field()
     pass

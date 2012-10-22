@@ -21,10 +21,10 @@ class DmozSpider(BaseSpider):
                 item = GetdataItem()
 		item['url_id'] = response.url.split('=-')[1]
 		if(len(t.select('td'))>0):
-			id = t.select('td')[0].select('a/@href').extract()[0]
-        	        id = id.split('=')
-			id = id[len(id)-1].split('.')[0]
-	                item['seimunas'] = id#[len(t)-1]
+			#id = t.select('td')[0].select('a/@href').extract()[0]
+        	        #id = id.split('=')
+			#id = id[len(id)-1].split('.')[0]
+	                #item['seimunas'] = id#[len(t)-1]
 			item['pavarde'] = t.select('td')[0].select('a/text()')[0].extract().replace(u'\xa0',u'').encode('UTF8')
 
 			item['partija']=t.select('td/text()')[2].extract().replace(u'\xa0',u'').encode('utf8')			
