@@ -1,5 +1,6 @@
 setwd('/home/git/seimunai/')
 require(reshape)
+require(xts)
 require(ggplot2)
 vote=read.table('getdata/items14000.csv',encoding='utf-8',sep=',',header=T,stringsAsFactors=F)
 vote=rbind(vote,read.table('getdata/items12000.csv',encoding='utf-8',sep=',',header=T,stringsAsFactors=F))
